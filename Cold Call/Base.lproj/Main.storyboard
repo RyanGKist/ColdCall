@@ -25,7 +25,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DcK-yB-DQP">
-                                <rect key="frame" x="80" y="176.5" width="215" height="30"/>
+                                <rect key="frame" x="80" y="283" width="215" height="30"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Cold Call">
                                     <color key="titleColor" red="0.43921568630000002" green="0.0" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
@@ -34,24 +34,35 @@
                                     <action selector="callButtonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="rhD-l5-Bfm"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adi-hZ-iQK">
+                                <rect key="frame" x="60" y="191" width="255" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="DcK-yB-DQP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="3e6-xJ-85c"/>
                             <constraint firstItem="oyl-rY-dxo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="3eZ-S6-4Ix"/>
-                            <constraint firstItem="DcK-yB-DQP" firstAttribute="top" secondItem="oyl-rY-dxo" secondAttribute="bottom" constant="25" id="IEn-as-jOP"/>
+                            <constraint firstItem="adi-hZ-iQK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="GKZ-NS-vRU"/>
                             <constraint firstItem="oyl-rY-dxo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Kdh-MK-zi5"/>
+                            <constraint firstItem="DcK-yB-DQP" firstAttribute="top" secondItem="adi-hZ-iQK" secondAttribute="bottom" constant="71" id="N74-3J-69H"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DcK-yB-DQP" secondAttribute="trailing" constant="80" id="Nji-Lf-B5y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="adi-hZ-iQK" secondAttribute="trailing" constant="60" id="Rfg-zu-IBN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oyl-rY-dxo" secondAttribute="trailing" constant="50" id="rIh-me-ekA"/>
+                            <constraint firstItem="adi-hZ-iQK" firstAttribute="top" secondItem="oyl-rY-dxo" secondAttribute="bottom" constant="39.5" id="sDp-uo-P3g"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="number" destination="adi-hZ-iQK" id="6Qo-tb-2fi"/>
                         <outlet property="personsName" destination="oyl-rY-dxo" id="qiO-cx-rWg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="390" y="-57"/>
         </scene>
     </scenes>
 </document>
